@@ -1,0 +1,485 @@
+2025-08-08 03:00:50 - INFO - 📝 Logs salvos em: logs\trading_bot_20250808.log
+2025-08-08 03:00:50 - INFO - 🚀 Sistema de logging inicializado
+2025-08-08 03:00:50 - INFO - 📊 Nível: INFO | Debug: False | Arquivo: True
+2025-08-08 03:00:50 - utils.logger - INFO - logger.py:113 - 📝 Logs salvos em: logs\trading_bot_20250808.log
+2025-08-08 03:00:50 - utils.logger - INFO - logger.py:122 - 🚀 Sistema de logging inicializado
+2025-08-08 03:00:50 - utils.logger - INFO - logger.py:123 - 📊 Nível: INFO | Debug: True | Arquivo: True
+2025-08-08 03:00:50 - __main__ - INFO - main.py:31 - 🔍 Validando configurações...
+2025-08-08 03:00:50 - __main__ - INFO - main.py:35 - 🚀 Iniciando Trading Bot Modular...
+2025-08-08 03:00:50 - __main__ - INFO - main.py:36 - 📊 Estratégia: Candle Pattern
+2025-08-08 03:00:50 - __main__ - INFO - main.py:37 - 💰 Risk Management: MARTINGALE
+2025-08-08 03:00:50 - __main__ - INFO - main.py:38 - 🎯 Ativos: stpRNG, stpRNG2, stpRNG3, stpRNG4, stpRNG5
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:31 - 🤖 Inicializando Trading Bot Modular...
+2025-08-08 03:00:50 - strategies.candle_pattern - INFO - candle_pattern.py:55 - 🕯️ ESTRATÉGIA CANDLE PATTERN (LÓGICA ORIGINAL) CONFIGURADA:
+2025-08-08 03:00:50 - strategies.candle_pattern - INFO - candle_pattern.py:56 -    📈 CALL: GREEN → GREEN → GREEN → GREEN
+2025-08-08 03:00:50 - strategies.candle_pattern - INFO - candle_pattern.py:57 -    📉 PUT: RED → RED → RED → RED
+2025-08-08 03:00:50 - strategies.candle_pattern - INFO - candle_pattern.py:58 -    🔀 Confluências: Nenhuma
+2025-08-08 03:00:50 - strategies.candle_pattern - INFO - candle_pattern.py:59 -    ✅ Vela 1 = mais recente | Vela 2 = penúltima
+2025-08-08 03:00:50 - risk_management.base_risk - INFO - base_risk.py:36 - 🎯 MartingaleRisk inicializado
+2025-08-08 03:00:50 - risk_management.base_risk - INFO - base_risk.py:37 -    💰 Valores: Min=$0.35 | Max=$2000.00
+2025-08-08 03:00:50 - risk_management.base_risk - INFO - base_risk.py:38 -    🛑 Stop Loss: $100.00 (FIXED)
+2025-08-08 03:00:50 - risk_management.base_risk - INFO - base_risk.py:39 -    🎯 Stop Win: $10.00 (PERCENTAGE)
+2025-08-08 03:00:50 - risk_management.martingale - INFO - martingale.py:29 - 🎲 MARTINGALE configurado:
+2025-08-08 03:00:50 - risk_management.martingale - INFO - martingale.py:31 -    💰 Entrada Inicial: 0.8% da banca inicial da sessão.
+2025-08-08 03:00:50 - risk_management.martingale - INFO - martingale.py:35 -    📊 Tipo: NEXT_CANDLE
+2025-08-08 03:00:50 - risk_management.martingale - INFO - martingale.py:36 -    📈 Multiplicador: 4.0x
+2025-08-08 03:00:50 - risk_management.martingale - INFO - martingale.py:37 -    🔢 Máx Sequência: 3
+2025-08-08 03:00:50 - trading.operation_executor - INFO - operation_executor.py:39 - ⚡ Modo TICK detectado - timeouts otimizados
+2025-08-08 03:00:50 - trading.operation_executor - INFO - operation_executor.py:54 - 🎯 Executor configurado:
+2025-08-08 03:00:50 - trading.operation_executor - INFO - operation_executor.py:55 -    ⏰ Expiração: 8t
+2025-08-08 03:00:50 - trading.operation_executor - INFO - operation_executor.py:56 -    🔄 Dual Entry: ✅ Ativo
+2025-08-08 03:00:50 - trading.operation_executor - INFO - operation_executor.py:57 -    ⚡ Timeouts: Proposta=8.0s | Compra=8.0s
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:59 - ✅ Trading Bot inicializado com sucesso!
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:638 - ======================================================================
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:639 - 🤖 TRADING BOT MODULAR - CONFIGURAÇÃO
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:640 - ======================================================================
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:641 - 📊 Ativos: stpRNG, stpRNG2, stpRNG3, stpRNG4, stpRNG5
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:642 - ⏰ Timeframe: M1 | Exp: 8t
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:643 - 💰 Risk Management: MARTINGALE
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:644 - 🔄 Dual Entry: ✅
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:645 - 🛑 Stop Loss: $100.0 | Stop Win: $10.0
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:646 - 🕯️ Estratégia: Candle Pattern (0 confluências)
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:647 - 🎯 Controle de Ativos: APENAS 1 ATIVO SIMULTÂNEO
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:648 - 🔄 Recuperação de Contratos: HABILITADA
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:649 - 🚨 Sistema de Reconexão: PERSISTENTE (NUNCA DESISTE)
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:650 - ======================================================================
+2025-08-08 03:00:50 - core.bot - INFO - bot.py:186 - 🚀 Iniciando Trading Bot...
+2025-08-08 03:00:50 - connection.websocket_manager - INFO - websocket_manager.py:69 - 🔗 Conectando WebSocket: wss://ws.binaryws.com/websockets/v3?app_id=1089
+2025-08-08 03:00:51 - connection.websocket_manager - INFO - websocket_manager.py:84 - ✅ WebSocket conectado com sucesso!
+2025-08-08 03:00:51 - core.bot - INFO - bot.py:213 - ✅ Conectado ao WebSocket
+2025-08-08 03:00:51 - connection.websocket_manager - INFO - websocket_manager.py:281 - 🔐 Iniciando autorização...
+2025-08-08 03:00:51 - connection.websocket_manager - INFO - websocket_manager.py:301 - ✅ Autorização bem-sucedida - User: VRTC11660555 | Currency: USD
+2025-08-08 03:00:51 - core.bot - INFO - bot.py:253 - 💰 Sessão inicializada - Saldo: $37.48
+2025-08-08 03:00:51 - core.bot - INFO - bot.py:228 - ⌛ Sincronizando relógio com o servidor da corretora...
+2025-08-08 03:00:51 - core.bot - INFO - bot.py:239 - ✅ Sincronização completa. Atraso local: +227.60ms (Latência: 151.41ms)
+2025-08-08 03:00:51 - core.bot - INFO - bot.py:256 - 📊 Carregando dados históricos...
+2025-08-08 03:00:52 - core.bot - INFO - bot.py:260 - 📊 Histórico carregado: 5/5 ativos prontos
+2025-08-08 03:00:52 - core.bot - INFO - bot.py:276 - 📡 Inscrevendo-se no stream de ticks...
+2025-08-08 03:00:52 - core.bot - INFO - bot.py:219 - 🎉 Setup completo - robô operacional!
+2025-08-08 03:00:52 - core.bot - INFO - bot.py:197 - 🕐 Aguardando primeira vela completa em: 03:02:00
+2025-08-08 03:00:52 - core.bot - INFO - bot.py:284 - 🔄 Iniciando loop principal de análise...
+2025-08-08 03:00:52 - core.bot - INFO - bot.py:352 - ✅ Loop de verificação de resultados iniciado.
+2025-08-08 03:02:00 - core.bot - INFO - bot.py:293 - ✅ Inicialização completa - robô pronto para operar!
+2025-08-08 03:04:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG2: Processando sinal PUT (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:04:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:04:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $0.35 | ID: 290408183768
+2025-08-08 03:04:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $0.35 | ID: 290408184308
+2025-08-08 03:04:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 0.92s
+2025-08-08 03:04:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-0.35
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG2 PUT GANHOU: $+0.56
+2025-08-08 03:04:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG2 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 03:04:13 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG2: VITÓRIA! Lucro: $+0.21
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $37.69 (+0.21 | +0.56%)
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 1 | WR: 100.0%
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 3m 20s
+2025-08-08 03:04:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:05:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG2: Processando sinal PUT (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:05:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:05:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $0.35 | ID: 290408245368
+2025-08-08 03:05:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $0.35 | ID: 290408245808
+2025-08-08 03:05:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 0.92s
+2025-08-08 03:05:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-0.35
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG2 PUT GANHOU: $+0.56
+2025-08-08 03:05:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG2 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 03:05:13 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG2: VITÓRIA! Lucro: $+0.21
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $37.90 (+0.42 | +1.12%)
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 2 | WR: 100.0%
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 4m 20s
+2025-08-08 03:05:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:12:13 - websockets.client - ERROR - protocol.py:1015 - data transfer failed
+Traceback (most recent call last):
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 959, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1029, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1104, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\protocol.py", line 1161, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\framing.py", line 68, in read
+    data = await reader(2)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 804, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\davii\AppData\Local\Programs\Python\Python313\Lib\asyncio\windows_events.py", line 463, in finish_socket_func
+    return ov.getresult()
+           ~~~~~~~~~~~~^^
+OSError: [WinError 121] O tempo limite do semáforo expirou
+2025-08-08 03:12:13 - connection.websocket_manager - WARNING - websocket_manager.py:116 - 💔 WebSocket fechado durante o recebimento de mensagens.
+2025-08-08 03:12:13 - core.bot - WARNING - bot.py:82 - 💔 Desconexão detectada - iniciando sistema de recuperação
+2025-08-08 03:12:13 - connection.contract_recovery - INFO - contract_recovery.py:65 - 💾 Fazendo backup do estado antes da desconexão...
+2025-08-08 03:12:13 - connection.contract_recovery - INFO - contract_recovery.py:79 - 💾 0 contratos adicionados ao monitoramento
+2025-08-08 03:12:13 - connection.contract_recovery - INFO - contract_recovery.py:80 - 💰 Saldo antes da desconexão: $37.90
+2025-08-08 03:12:13 - connection.reconnection_system - WARNING - reconnection_system.py:186 - 💔 Conexão perdida - iniciando reconexão PERSISTENTE...
+2025-08-08 03:12:13 - connection.reconnection_system - INFO - reconnection_system.py:162 - 💾 Fazendo backup do estado antes da reconexão...
+2025-08-08 03:12:13 - connection.reconnection_system - INFO - reconnection_system.py:202 - 😌 NORMAL - Reconexão conservadora
+2025-08-08 03:12:13 - connection.reconnection_system - INFO - reconnection_system.py:203 - 🎯 Tentativas iniciais: 5
+2025-08-08 03:12:13 - connection.reconnection_system - INFO - reconnection_system.py:204 - 🔄 Modo persistente: Ativado (nunca desiste)
+2025-08-08 03:12:13 - connection.reconnection_system - WARNING - reconnection_system.py:241 - 😌 Tentativa 1/5 em 10.0s [NORMAL_IDLE]
+2025-08-08 03:12:25 - connection.websocket_manager - INFO - websocket_manager.py:69 - 🔗 Conectando WebSocket: wss://ws.binaryws.com/websockets/v3?app_id=1089
+2025-08-08 03:12:26 - connection.websocket_manager - INFO - websocket_manager.py:84 - ✅ WebSocket conectado com sucesso!
+2025-08-08 03:12:26 - connection.websocket_manager - INFO - websocket_manager.py:281 - 🔐 Iniciando autorização...
+2025-08-08 03:12:26 - connection.websocket_manager - INFO - websocket_manager.py:301 - ✅ Autorização bem-sucedida - User: VRTC11660555 | Currency: USD
+2025-08-08 03:12:26 - core.bot - INFO - bot.py:105 - ✅ Reconexão e autorização bem-sucedidas
+2025-08-08 03:12:26 - connection.reconnection_system - INFO - reconnection_system.py:302 - 🎉 Reconectado após 1 tentativas!
+2025-08-08 03:12:26 - connection.reconnection_system - INFO - reconnection_system.py:303 - ⏱️ Downtime: 12.9s | Contexto: normal_idle
+2025-08-08 03:12:26 - core.bot - INFO - bot.py:86 - 🎉 Reconectado com sucesso - iniciando recuperação de contratos
+2025-08-08 03:12:26 - connection.contract_recovery - INFO - contract_recovery.py:90 - ✅ Nenhum contrato para recuperar
+2025-08-08 03:12:26 - core.bot - INFO - bot.py:91 - 📊 Recuperação: 0/0 contratos
+2025-08-08 03:12:26 - core.bot - INFO - bot.py:276 - 📡 Inscrevendo-se no stream de ticks...
+2025-08-08 03:28:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG2: Processando sinal PUT (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:28:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:28:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $0.35 | ID: 290409724188
+2025-08-08 03:28:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $0.35 | ID: 290409724588
+2025-08-08 03:28:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 1.02s
+2025-08-08 03:28:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 03:28:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-0.35
+2025-08-08 03:28:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 PUT PERDEU: $-0.35
+2025-08-08 03:28:13 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG2 MartingaleRisk S1: DERROTA $-0.70
+2025-08-08 03:28:13 - risk_management.martingale - INFO - martingale.py:85 - 📈 stpRNG2: Martingale → S2
+2025-08-08 03:28:13 - risk_management.martingale - INFO - martingale.py:86 -    💸 Perda acumulada: $-0.70
+2025-08-08 03:28:13 - risk_management.martingale - INFO - martingale.py:91 -    🎯 Próximo valor: $1.20
+2025-08-08 03:29:00 - core.bot - INFO - bot.py:373 - ⚙️ stpRNG2: Disparando Martingale S2 na direção: PUT
+2025-08-08 03:29:00 - core.bot - INFO - bot.py:435 - 🎯 stpRNG2: Processando sinal PUT (S2)
+2025-08-08 03:29:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S2: CALL($1.20) + PUT($1.20) = $2.40
+2025-08-08 03:29:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $1.20 | ID: 290409791148
+2025-08-08 03:29:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $1.20 | ID: 290409791608
+2025-08-08 03:29:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 1.01s
+2025-08-08 03:29:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 03:29:12 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-1.20
+2025-08-08 03:29:12 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 PUT PERDEU: $-1.20
+2025-08-08 03:29:12 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG2 MartingaleRisk S2: DERROTA $-2.40
+2025-08-08 03:29:12 - risk_management.martingale - INFO - martingale.py:85 - 📈 stpRNG2: Martingale → S3
+2025-08-08 03:29:12 - risk_management.martingale - INFO - martingale.py:86 -    💸 Perda acumulada: $-3.10
+2025-08-08 03:29:12 - risk_management.martingale - INFO - martingale.py:91 -    🎯 Próximo valor: $4.80
+2025-08-08 03:30:00 - core.bot - INFO - bot.py:373 - ⚙️ stpRNG2: Disparando Martingale S3 na direção: PUT
+2025-08-08 03:30:00 - core.bot - INFO - bot.py:435 - 🎯 stpRNG2: Processando sinal PUT (S3)
+2025-08-08 03:30:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S3: CALL($4.80) + PUT($4.80) = $9.60
+2025-08-08 03:30:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $4.80 | ID: 290409860268
+2025-08-08 03:30:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $4.80 | ID: 290409860808
+2025-08-08 03:30:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 1.03s
+2025-08-08 03:30:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-4.80
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 PUT PERDEU: $-4.80
+2025-08-08 03:30:13 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG2 MartingaleRisk S3: DERROTA $-9.60
+2025-08-08 03:30:13 - risk_management.martingale - WARNING - martingale.py:115 - 🛑 stpRNG2: Limite martingale atingido! Perda total: $-12.70
+2025-08-08 03:30:13 - risk_management.martingale - INFO - martingale.py:79 - 🔄 stpRNG2: Sequência resetada S3 → S1
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $25.20 (-12.28 | -32.76%)
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 5 | WR: 40.0%
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 29m 20s
+2025-08-08 03:30:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:37:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG5: Processando sinal PUT (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:37:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG5 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:37:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 CALL: $0.35 | ID: 290410338308
+2025-08-08 03:37:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 PUT: $0.35 | ID: 290410338728
+2025-08-08 03:37:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG5: DUAL TICK (2/2) executado em 0.99s
+2025-08-08 03:37:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG5: Operação iniciada com sucesso
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG5 CALL GANHOU: $+0.56
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 PUT PERDEU: $-0.35
+2025-08-08 03:37:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG5 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 03:37:13 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG5: VITÓRIA! Lucro: $+0.21
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $25.41 (-12.07 | -32.20%)
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 6 | WR: 50.0%
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 36m 20s
+2025-08-08 03:37:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:50:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG: Processando sinal PUT (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:50:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:50:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG CALL: $0.35 | ID: 290411194228
+2025-08-08 03:50:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG PUT: $0.35 | ID: 290411194968
+2025-08-08 03:50:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG: DUAL TICK (2/2) executado em 1.29s
+2025-08-08 03:50:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG: Operação iniciada com sucesso
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG CALL GANHOU: $+0.56
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG PUT PERDEU: $-0.35
+2025-08-08 03:50:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 03:50:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG: VITÓRIA! Lucro: $+0.21
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $25.62 (-11.86 | -31.64%)
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 7 | WR: 57.1%
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 49m 18s
+2025-08-08 03:50:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:53:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG5: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:53:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG5 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:53:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 CALL: $0.35 | ID: 290411391148
+2025-08-08 03:53:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 PUT: $0.35 | ID: 290411391508
+2025-08-08 03:53:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG5: DUAL TICK (2/2) executado em 0.95s
+2025-08-08 03:53:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG5: Operação iniciada com sucesso
+2025-08-08 03:53:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 CALL PERDEU: $-0.35
+2025-08-08 03:53:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 PUT PERDEU: $-0.35
+2025-08-08 03:53:13 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG5 MartingaleRisk S1: DERROTA $-0.70
+2025-08-08 03:53:13 - risk_management.martingale - INFO - martingale.py:85 - 📈 stpRNG5: Martingale → S2
+2025-08-08 03:53:13 - risk_management.martingale - INFO - martingale.py:86 -    💸 Perda acumulada: $-0.70
+2025-08-08 03:53:13 - risk_management.martingale - INFO - martingale.py:91 -    🎯 Próximo valor: $1.20
+2025-08-08 03:54:00 - core.bot - INFO - bot.py:373 - ⚙️ stpRNG5: Disparando Martingale S2 na direção: CALL
+2025-08-08 03:54:00 - core.bot - INFO - bot.py:435 - 🎯 stpRNG5: Processando sinal CALL (S2)
+2025-08-08 03:54:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG5 DUAL S2: CALL($1.20) + PUT($1.20) = $2.40
+2025-08-08 03:54:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 CALL: $1.20 | ID: 290411460848
+2025-08-08 03:54:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 PUT: $1.20 | ID: 290411461248
+2025-08-08 03:54:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG5: DUAL TICK (2/2) executado em 1.02s
+2025-08-08 03:54:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG5: Operação iniciada com sucesso
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 CALL PERDEU: $-1.20
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG5 PUT GANHOU: $+2.00
+2025-08-08 03:54:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG5 MartingaleRisk S2: VITÓRIA $+0.80
+2025-08-08 03:54:13 - risk_management.martingale - INFO - martingale.py:102 - 🎉 stpRNG5: VITÓRIA! Resultado final da sequência: $+0.10
+2025-08-08 03:54:13 - risk_management.martingale - INFO - martingale.py:79 - 🔄 stpRNG5: Sequência resetada S2 → S1
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $25.72 (-11.76 | -31.38%)
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 9 | WR: 55.6%
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 53m 20s
+2025-08-08 03:54:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:55:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG5: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:55:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG5 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:55:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 CALL: $0.35 | ID: 290411532248
+2025-08-08 03:55:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 PUT: $0.35 | ID: 290411532708
+2025-08-08 03:55:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG5: DUAL TICK (2/2) executado em 0.97s
+2025-08-08 03:55:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG5: Operação iniciada com sucesso
+2025-08-08 03:55:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 CALL PERDEU: $-0.35
+2025-08-08 03:55:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 PUT PERDEU: $-0.35
+2025-08-08 03:55:13 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG5 MartingaleRisk S1: DERROTA $-0.70
+2025-08-08 03:55:13 - risk_management.martingale - INFO - martingale.py:85 - 📈 stpRNG5: Martingale → S2
+2025-08-08 03:55:13 - risk_management.martingale - INFO - martingale.py:86 -    💸 Perda acumulada: $-0.70
+2025-08-08 03:55:13 - risk_management.martingale - INFO - martingale.py:91 -    🎯 Próximo valor: $1.20
+2025-08-08 03:56:00 - core.bot - INFO - bot.py:373 - ⚙️ stpRNG5: Disparando Martingale S2 na direção: CALL
+2025-08-08 03:56:00 - core.bot - INFO - bot.py:435 - 🎯 stpRNG5: Processando sinal CALL (S2)
+2025-08-08 03:56:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG5 DUAL S2: CALL($1.20) + PUT($1.20) = $2.40
+2025-08-08 03:56:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 CALL: $1.20 | ID: 290411603968
+2025-08-08 03:56:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG5 PUT: $1.20 | ID: 290411604448
+2025-08-08 03:56:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG5: DUAL TICK (2/2) executado em 1.07s
+2025-08-08 03:56:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG5: Operação iniciada com sucesso
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG5 CALL GANHOU: $+2.00
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG5 PUT PERDEU: $-1.20
+2025-08-08 03:56:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG5 MartingaleRisk S2: VITÓRIA $+0.80
+2025-08-08 03:56:11 - risk_management.martingale - INFO - martingale.py:102 - 🎉 stpRNG5: VITÓRIA! Resultado final da sequência: $+0.10
+2025-08-08 03:56:11 - risk_management.martingale - INFO - martingale.py:79 - 🔄 stpRNG5: Sequência resetada S2 → S1
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $25.82 (-11.66 | -31.11%)
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 11 | WR: 54.5%
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 55m 18s
+2025-08-08 03:56:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 03:58:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 03:58:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 03:58:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290411754248
+2025-08-08 03:58:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290411754648
+2025-08-08 03:58:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.03s
+2025-08-08 03:58:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 CALL GANHOU: $+0.56
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 PUT PERDEU: $-0.35
+2025-08-08 03:58:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 03:58:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $26.03 (-11.45 | -30.55%)
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 12 | WR: 58.3%
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 57m 18s
+2025-08-08 03:58:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:04:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:04:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:04:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290412193068
+2025-08-08 04:04:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290412193728
+2025-08-08 04:04:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.30s
+2025-08-08 04:04:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 CALL GANHOU: $+0.56
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 PUT PERDEU: $-0.35
+2025-08-08 04:04:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:04:13 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $26.24 (-11.24 | -29.99%)
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 13 | WR: 61.5%
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 3m 20s
+2025-08-08 04:04:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:05:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:05:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:05:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290412264688
+2025-08-08 04:05:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290412265028
+2025-08-08 04:05:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.04s
+2025-08-08 04:05:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 CALL PERDEU: $-0.35
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 PUT GANHOU: $+0.56
+2025-08-08 04:05:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:05:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $26.45 (-11.03 | -29.43%)
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 14 | WR: 64.3%
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 4m 18s
+2025-08-08 04:05:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:06:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:06:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:06:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290412337508
+2025-08-08 04:06:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290412338148
+2025-08-08 04:06:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.44s
+2025-08-08 04:06:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 CALL GANHOU: $+0.56
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 PUT PERDEU: $-0.35
+2025-08-08 04:06:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:06:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $26.66 (-10.82 | -28.87%)
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 15 | WR: 66.7%
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 5m 18s
+2025-08-08 04:06:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:07:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:07:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:07:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290412407108
+2025-08-08 04:07:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290412407708
+2025-08-08 04:07:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.04s
+2025-08-08 04:07:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:07:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 CALL PERDEU: $-0.35
+2025-08-08 04:07:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 PUT PERDEU: $-0.35
+2025-08-08 04:07:11 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG4 MartingaleRisk S1: DERROTA $-0.70
+2025-08-08 04:07:11 - risk_management.martingale - INFO - martingale.py:85 - 📈 stpRNG4: Martingale → S2
+2025-08-08 04:07:11 - risk_management.martingale - INFO - martingale.py:86 -    💸 Perda acumulada: $-0.70
+2025-08-08 04:07:11 - risk_management.martingale - INFO - martingale.py:91 -    🎯 Próximo valor: $1.20
+2025-08-08 04:08:00 - core.bot - INFO - bot.py:373 - ⚙️ stpRNG4: Disparando Martingale S2 na direção: CALL
+2025-08-08 04:08:00 - core.bot - INFO - bot.py:435 - 🎯 stpRNG4: Processando sinal CALL (S2)
+2025-08-08 04:08:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S2: CALL($1.20) + PUT($1.20) = $2.40
+2025-08-08 04:08:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $1.20 | ID: 290412479168
+2025-08-08 04:08:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $1.20 | ID: 290412479468
+2025-08-08 04:08:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.01s
+2025-08-08 04:08:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 CALL PERDEU: $-1.20
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 PUT GANHOU: $+2.00
+2025-08-08 04:08:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S2: VITÓRIA $+0.80
+2025-08-08 04:08:11 - risk_management.martingale - INFO - martingale.py:102 - 🎉 stpRNG4: VITÓRIA! Resultado final da sequência: $+0.10
+2025-08-08 04:08:11 - risk_management.martingale - INFO - martingale.py:79 - 🔄 stpRNG4: Sequência resetada S2 → S1
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $26.76 (-10.72 | -28.60%)
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 17 | WR: 64.7%
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 7m 18s
+2025-08-08 04:08:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:10:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG: Processando sinal PUT (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:10:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:10:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG CALL: $0.35 | ID: 290412615068
+2025-08-08 04:10:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG PUT: $0.35 | ID: 290412615468
+2025-08-08 04:10:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG: DUAL TICK (2/2) executado em 0.97s
+2025-08-08 04:10:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG: Operação iniciada com sucesso
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG CALL PERDEU: $-0.35
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG PUT GANHOU: $+0.56
+2025-08-08 04:10:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:10:13 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $26.97 (-10.51 | -28.04%)
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 18 | WR: 66.7%
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 9m 20s
+2025-08-08 04:10:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:24:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:24:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:24:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290413598208
+2025-08-08 04:24:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290413598508
+2025-08-08 04:24:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 0.99s
+2025-08-08 04:24:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 CALL PERDEU: $-0.35
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 PUT GANHOU: $+0.56
+2025-08-08 04:24:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:24:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $27.18 (-10.30 | -27.48%)
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 19 | WR: 68.4%
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 23m 18s
+2025-08-08 04:24:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:25:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:25:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:25:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290413674488
+2025-08-08 04:25:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290413674868
+2025-08-08 04:25:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.03s
+2025-08-08 04:25:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 CALL PERDEU: $-0.35
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 PUT GANHOU: $+0.56
+2025-08-08 04:25:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:25:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $27.39 (-10.09 | -26.92%)
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 20 | WR: 70.0%
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 24m 18s
+2025-08-08 04:25:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:26:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG4: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:26:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG4 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:26:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 CALL: $0.35 | ID: 290413745028
+2025-08-08 04:26:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG4 PUT: $0.35 | ID: 290413745628
+2025-08-08 04:26:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG4: DUAL TICK (2/2) executado em 1.00s
+2025-08-08 04:26:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG4: Operação iniciada com sucesso
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG4 CALL PERDEU: $-0.35
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:563 - ✅ stpRNG4 PUT GANHOU: $+0.56
+2025-08-08 04:26:11 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG4 MartingaleRisk S1: VITÓRIA $+0.21
+2025-08-08 04:26:11 - risk_management.martingale - INFO - martingale.py:104 - 🎉 stpRNG4: VITÓRIA! Lucro: $+0.21
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $27.60 (-9.88 | -26.36%)
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:658 -    🎯 Operações: 21 | WR: 71.4%
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 25m 18s
+2025-08-08 04:26:11 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:29:00 - core.bot - INFO - bot.py:433 - 🎯 stpRNG2: Processando sinal CALL (S1) - Entrada no segundo 1 da vela
+2025-08-08 04:29:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S1: CALL($0.35) + PUT($0.35) = $0.70
+2025-08-08 04:29:00 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $0.35 | ID: 290413978788
+2025-08-08 04:29:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $0.35 | ID: 290413979228
+2025-08-08 04:29:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 1.06s
+2025-08-08 04:29:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 04:29:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-0.35
+2025-08-08 04:29:11 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 PUT PERDEU: $-0.35
+2025-08-08 04:29:11 - risk_management.base_risk - INFO - base_risk.py:154 - ❌ stpRNG2 MartingaleRisk S1: DERROTA $-0.70
+2025-08-08 04:29:11 - risk_management.martingale - INFO - martingale.py:85 - 📈 stpRNG2: Martingale → S2
+2025-08-08 04:29:11 - risk_management.martingale - INFO - martingale.py:86 -    💸 Perda acumulada: $-0.70
+2025-08-08 04:29:11 - risk_management.martingale - INFO - martingale.py:91 -    🎯 Próximo valor: $1.20
+2025-08-08 04:30:00 - core.bot - INFO - bot.py:373 - ⚙️ stpRNG2: Disparando Martingale S2 na direção: CALL
+2025-08-08 04:30:00 - core.bot - INFO - bot.py:435 - 🎯 stpRNG2: Processando sinal CALL (S2)
+2025-08-08 04:30:00 - trading.operation_executor - INFO - operation_executor.py:106 - 🎯 stpRNG2 DUAL S2: CALL($1.20) + PUT($1.20) = $2.40
+2025-08-08 04:30:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 CALL: $1.20 | ID: 290414059448
+2025-08-08 04:30:01 - trading.operation_executor - INFO - operation_executor.py:226 - ✅ stpRNG2 PUT: $1.20 | ID: 290414060608
+2025-08-08 04:30:01 - trading.operation_executor - INFO - operation_executor.py:128 - 🚀 stpRNG2: DUAL TICK (2/2) executado em 1.39s
+2025-08-08 04:30:01 - core.bot - INFO - bot.py:451 - ✅ stpRNG2: Operação iniciada com sucesso
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:563 - ❌ stpRNG2 CALL PERDEU: $-1.20
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:563 - ✅ stpRNG2 PUT GANHOU: $+2.00
+2025-08-08 04:30:13 - risk_management.base_risk - INFO - base_risk.py:154 - ✅ stpRNG2 MartingaleRisk S2: VITÓRIA $+0.80
+2025-08-08 04:30:13 - risk_management.martingale - INFO - martingale.py:102 - 🎉 stpRNG2: VITÓRIA! Resultado final da sequência: $+0.10
+2025-08-08 04:30:13 - risk_management.martingale - INFO - martingale.py:79 - 🔄 stpRNG2: Sequência resetada S2 → S1
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $27.70 (-9.78 | -26.09%)
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:658 -    🎯 Operações: 23 | WR: 69.6%
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 29m 20s
+2025-08-08 04:30:13 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:344 - 🔄 Loop principal de análise cancelado.
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:349 - 🔄 Loop principal de análise finalizado.
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:359 - 🔄 Loop de verificação de resultados cancelado.
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:364 - 🔄 Loop de verificação de resultados finalizado.
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:663 - 🧹 Finalizando bot...
+2025-08-08 04:30:41 - connection.websocket_manager - INFO - websocket_manager.py:172 - 🔌 Desconectando WebSocket...
+2025-08-08 04:30:41 - connection.websocket_manager - INFO - websocket_manager.py:200 - 🔌 WebSocket desconectado
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:655 - ======================================================================
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:656 - 📊 RESUMO DA SESSÃO:
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:657 -    💰 Saldo: $37.48 → $27.70 (-9.78 | -26.09%)
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:658 -    🎯 Operações: 23 | WR: 69.6%
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:659 -    ⏱️ Sessão: 1h 29m 48s
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:660 - ======================================================================
+2025-08-08 04:30:41 - core.bot - INFO - bot.py:674 - 👋 Trading Bot finalizado
